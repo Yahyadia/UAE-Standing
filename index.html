@@ -18,7 +18,7 @@
                         <th>فاز</th>
                         <th>تعادل</th>
                         <th>خسر</th>
-                        <th>متبقية</th>
+                        <!-- <th>متبقية</th> -->
                         <th>-/+</th>
                         <th>فرق</th>
                         <th>نقاط</th>
@@ -63,7 +63,6 @@ axios.get("https://v3.football.api-sports.io/standings?league=301&season=2023",{
                         <td>${team.rank}</td>
                         <td><img src="${team.team.logo}" alt="" width="30px"></td>
                         <td>${team.team.name}</td>
-                        <td>${team.rank}</td>
                         <td>${team.all.played}</td>
                         <td>${team.all.win}</td>
                         <td>${team.all.draw}</td>
@@ -75,8 +74,9 @@ axios.get("https://v3.football.api-sports.io/standings?league=301&season=2023",{
     `    
     document.getElementById("standing").innerHTML += content
     }
-
+    
 })
+// <td>${team.rank}</td>
 
 
 
