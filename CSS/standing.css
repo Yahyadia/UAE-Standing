@@ -18,6 +18,7 @@
     /* background-size: 170%; */
     padding-inline: 5px;
     /* background-clip: ; */
+    overflow: hidden;
 }
 
 .container::before{
